@@ -8,7 +8,7 @@
       </div>
       <p>{{ product.price | currency }}</p>
       <div class="buttons-wrapper">
-        <button (click)="service.toggleFavorite(product.id)">
+        <button class="favorite-btn" (click)="service.toggleFavorite(product.id)">
           {{ service.isFavorite(product.id) ? '❤️' : '🤍' }}
         </button>
         <button class="view" [routerLink]="['/product', product.id]">View</button>

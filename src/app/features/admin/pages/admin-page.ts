@@ -5,6 +5,5 @@ import { Component } from '@angular/core';
   imports: [],
   standalone: true,
   template: ` <p>admin works!</p> `,
-  styles: ``,
 })
 export class AdminPageComponent {}

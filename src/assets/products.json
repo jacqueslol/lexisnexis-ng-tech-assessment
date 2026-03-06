@@ -78,5 +78,101 @@
     "price": 89.99,
     "category": "electronics",
     "imageUrl": "assets/images/keyboard.jpg"
+  },
+  {
+    "id": "11",
+    "name": "Precision Travel Mouse",
+    "description": "Portable mouse with high tracking precision.",
+    "price": 22.99,
+    "category": "accessories",
+    "imageUrl": "assets/images/mouse.jpg"
+  },
+  {
+    "id": "12",
+    "name": "Wireless Office Keyboard",
+    "description": "Quiet keyboard suitable for office use.",
+    "price": 54.99,
+    "category": "electronics",
+    "imageUrl": "assets/images/keyboard.jpg"
+  },
+  {
+    "id": "13",
+    "name": "Gaming Mouse Pad",
+    "description": "Large mouse pad designed for smooth tracking.",
+    "price": 12.99,
+    "category": "accessories",
+    "imageUrl": "assets/images/mouse.jpg"
+  },
+  {
+    "id": "14",
+    "name": "Mechanical Keyboard Mini",
+    "description": "Compact 60% mechanical keyboard for enthusiasts.",
+    "price": 74.99,
+    "category": "electronics",
+    "imageUrl": "assets/images/keyboard.jpg"
+  },
+  {
+    "id": "15",
+    "name": "Ergonomic Gaming Mouse",
+    "description": "Comfortable mouse for long gaming sessions.",
+    "price": 44.99,
+    "category": "electronics",
+    "imageUrl": "assets/images/mouse.jpg"
+  },
+  {
+    "id": "16",
+    "name": "Silent Mechanical Keyboard",
+    "description": "Mechanical keyboard with silent switches.",
+    "price": 84.99,
+    "category": "electronics",
+    "imageUrl": "assets/images/keyboard.jpg"
+  },
+  {
+    "id": "17",
+    "name": "Bluetooth Mouse",
+    "description": "Wireless mouse with Bluetooth connectivity.",
+    "price": 27.99,
+    "category": "electronics",
+    "imageUrl": "assets/images/mouse.jpg"
+  },
+  {
+    "id": "18",
+    "name": "Keyboard Cover",
+    "description": "Protective silicone cover for mechanical keyboards.",
+    "price": 9.99,
+    "category": "accessories",
+    "imageUrl": "assets/images/keyboard.jpg"
+  },
+  {
+    "id": "19",
+    "name": "Adjustable DPI Mouse",
+    "description": "Mouse with adjustable DPI settings for precision control.",
+    "price": 39.99,
+    "category": "electronics",
+    "imageUrl": "assets/images/mouse.jpg"
+  },
+  {
+    "id": "20",
+    "name": "Compact Keyboard Wrist Rest",
+    "description": "Comfortable wrist rest for compact keyboards.",
+    "price": 11.99,
+    "category": "accessories",
+    "imageUrl": "assets/images/keyboard.jpg"
+  },
+  {
+    "id": "21",
+    "name": "RGB Wireless Mouse",
+    "description": "Wireless mouse with RGB lighting and smooth tracking.",
+    "price": 49.99,
+    "category": "electronics",
+    "imageUrl": "assets/images/mouse.jpg"
+  },
+  {
+    "id": "22",
+    "name": "Mechanical Keyboard with Macros",
+    "description": "Keyboard with programmable macro keys.",
+    "price": 94.99,
+    "category": "electronics",
+    "imageUrl": "assets/images/keyboard.jpg"
   }
 ]
