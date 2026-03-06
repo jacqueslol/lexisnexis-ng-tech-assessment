@@ -1,0 +1,13 @@
+.state-controller {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: #eee;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  z-index: 9;
+  border: 1px solid #aaa;
+}

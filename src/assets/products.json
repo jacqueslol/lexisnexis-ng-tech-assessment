@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "name": "Wireless Mouse",
+    "description": "Ergonomic mouse with high precision.",
+    "price": 29.99,
+    "category": "electronics",
+    "imageUrl": "assets/images/mouse.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Mechanical Keyboard",
+    "description": "RGB keyboard with tactile switches.",
+    "price": 79.99,
+    "category": "electronics",
+    "imageUrl": "assets/images/keyboard.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Gaming Mouse",
+    "description": "High DPI mouse designed for gaming performance.",
+    "price": 49.99,
+    "category": "electronics",
+    "imageUrl": "assets/images/mouse.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Silent Click Mouse",
+    "description": "Wireless mouse with silent click technology.",
+    "price": 24.99,
+    "category": "accessories",
+    "imageUrl": "assets/images/mouse.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Compact Travel Mouse",
+    "description": "Small and portable mouse ideal for travel.",
+    "price": 18.99,
+    "category": "accessories",
+    "imageUrl": "assets/images/mouse.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Ergonomic Office Mouse",
+    "description": "Comfortable mouse designed for long office use.",
+    "price": 34.99,
+    "category": "electronics",
+    "imageUrl": "assets/images/mouse.jpg"
+  },
+  {
+    "id": "7",
+    "name": "Wireless Mechanical Keyboard",
+    "description": "Mechanical keyboard with wireless connectivity.",
+    "price": 99.99,
+    "category": "electronics",
+    "imageUrl": "assets/images/keyboard.jpg"
+  },
+  {
+    "id": "8",
+    "name": "Compact Mechanical Keyboard",
+    "description": "Space-saving mechanical keyboard with RGB lighting.",
+    "price": 69.99,
+    "category": "electronics",
+    "imageUrl": "assets/images/keyboard.jpg"
+  },
+  {
+    "id": "9",
+    "name": "Keyboard Wrist Rest",
+    "description": "Soft wrist rest designed for mechanical keyboards.",
+    "price": 14.99,
+    "category": "accessories",
+    "imageUrl": "assets/images/keyboard.jpg"
+  },
+  {
+    "id": "10",
+    "name": "RGB Gaming Keyboard",
+    "description": "Full-size keyboard with customizable RGB lighting.",
+    "price": 89.99,
+    "category": "electronics",
+    "imageUrl": "assets/images/keyboard.jpg"
+  }
+]

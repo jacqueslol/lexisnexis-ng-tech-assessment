@@ -1,0 +1,20 @@
+<div class="products-wrapper">
+  @for (product of productsSignal(); track product.id) {
+    <div class="product-card">
+      <img [src]="product.imageUrl" alt="Image of {{ product.name }}" />
+      <h3>{{ product.name }}</h3>
+      <div>
+        <span class="badge">{{ product.category }}</span>
+      </div>
+      <p>{{ product.price | currency }}</p>
+      <div class="buttons-wrapper">
+        <button (click)="service.toggleFavorite(product.id)">
+          {{ service.isFavorite(product.id) ? '❤️' : '🤍' }}
+        </button>
+        <button class="view" [routerLink]="['/product', product.id]">View</button>
+      </div>
+    </div>
+  } @empty {
+    <p>No products found.</p>
+  }
+</div>

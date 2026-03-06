@@ -1,0 +1,26 @@
+<div class="filters">
+  <button class="filters-toggle mobile-only" (click)="toggleFilters()">
+    <fa-icon [icon]="faFilter"></fa-icon>
+  </button>
+
+  <div class="filters-container animated" [class.expanded]="filtersOpen" [formGroup]="filtersForm">
+    <input placeholder="Search..." formControlName="search" />
+
+    <label>
+      Category:
+      <select formControlName="category">
+        <option value="all">All</option>
+        <option value="electronics">Electronics</option>
+        <option value="accessories">Accessories</option>
+      </select>
+    </label>
+
+    <label>
+      Sort:
+      <select formControlName="sort">
+        <option value="name">Name</option>
+        <option value="price">Price</option>
+      </select>
+    </label>
+  </div>
+</div>

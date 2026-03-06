@@ -1,0 +1,18 @@
+@if (showController) {
+  <div class="state-controller">
+    <h3>State Controller</h3>
+    <label>
+      Loading duration (milliseconds)
+
+      <input id="loading-duration" type="text" [(ngModel)]="loadingDuration" />
+    </label>
+
+    <label>
+      <input id="simulate-error" type="checkbox" [(ngModel)]="simulateError" />
+      Simulate error
+    </label>
+
+    <button (click)="saveState()">Save</button>
+    <button (click)="showController = false">Close</button>
+  </div>
+}

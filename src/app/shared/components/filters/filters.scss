@@ -1,0 +1,36 @@
+.filters-container {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .filters-toggle {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .filters-container {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    padding: 0 10px 0;
+    background-color: #8745ad;
+    height: 0;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .filters-container.expanded {
+    height: 190px;
+    padding: 30px 10px 10px;
+  }
+
+  .filters-container input,
+  .filters-container select {
+    padding: 5px;
+  }
+}
