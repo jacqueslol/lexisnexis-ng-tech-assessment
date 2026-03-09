@@ -5,7 +5,7 @@
     "description": "Ergonomic mouse with high precision.",
     "price": 29.99,
     "category": "electronics",
-    "imageUrl": "assets/images/mouse.jpg"
+    "imageUrl": "http://localhost:4200/assets/images/mouse.jpg"
   },
   {
     "id": "2",
@@ -13,7 +13,7 @@
     "description": "RGB keyboard with tactile switches.",
     "price": 79.99,
     "category": "electronics",
-    "imageUrl": "assets/images/keyboard.jpg"
+    "imageUrl": "http://localhost:4200/assets/images/keyboard.jpg"
   },
   {
     "id": "3",
@@ -21,7 +21,7 @@
     "description": "High DPI mouse designed for gaming performance.",
     "price": 49.99,
     "category": "electronics",
-    "imageUrl": "assets/images/mouse.jpg"
+    "imageUrl": "http://localhost:4200/assets/images/mouse.jpg"
   },
   {
     "id": "4",
@@ -29,7 +29,7 @@
     "description": "Wireless mouse with silent click technology.",
     "price": 24.99,
     "category": "accessories",
-    "imageUrl": "assets/images/mouse.jpg"
+    "imageUrl": "http://localhost:4200/assets/images/mouse.jpg"
   },
   {
     "id": "5",
@@ -37,7 +37,7 @@
     "description": "Small and portable mouse ideal for travel.",
     "price": 18.99,
     "category": "accessories",
-    "imageUrl": "assets/images/mouse.jpg"
+    "imageUrl": "http://localhost:4200/assets/images/mouse.jpg"
   },
   {
     "id": "6",
@@ -45,7 +45,7 @@
     "description": "Comfortable mouse designed for long office use.",
     "price": 34.99,
     "category": "electronics",
-    "imageUrl": "assets/images/mouse.jpg"
+    "imageUrl": "http://localhost:4200/assets/images/mouse.jpg"
   },
   {
     "id": "7",
@@ -53,7 +53,7 @@
     "description": "Mechanical keyboard with wireless connectivity.",
     "price": 99.99,
     "category": "electronics",
-    "imageUrl": "assets/images/keyboard.jpg"
+    "imageUrl": "http://localhost:4200/assets/images/keyboard.jpg"
   },
   {
     "id": "8",
@@ -61,7 +61,7 @@
     "description": "Space-saving mechanical keyboard with RGB lighting.",
     "price": 69.99,
     "category": "electronics",
-    "imageUrl": "assets/images/keyboard.jpg"
+    "imageUrl": "http://localhost:4200/assets/images/keyboard.jpg"
   },
   {
     "id": "9",
@@ -69,7 +69,7 @@
     "description": "Soft wrist rest designed for mechanical keyboards.",
     "price": 14.99,
     "category": "accessories",
-    "imageUrl": "assets/images/keyboard.jpg"
+    "imageUrl": "http://localhost:4200/assets/images/keyboard.jpg"
   },
   {
     "id": "10",
@@ -77,7 +77,7 @@
     "description": "Full-size keyboard with customizable RGB lighting.",
     "price": 89.99,
     "category": "electronics",
-    "imageUrl": "assets/images/keyboard.jpg"
+    "imageUrl": "http://localhost:4200/assets/images/keyboard.jpg"
   },
   {
     "id": "11",
@@ -85,7 +85,7 @@
     "description": "Portable mouse with high tracking precision.",
     "price": 22.99,
     "category": "accessories",
-    "imageUrl": "assets/images/mouse.jpg"
+    "imageUrl": "http://localhost:4200/assets/images/mouse.jpg"
   },
   {
     "id": "12",
@@ -93,7 +93,7 @@
     "description": "Quiet keyboard suitable for office use.",
     "price": 54.99,
     "category": "electronics",
-    "imageUrl": "assets/images/keyboard.jpg"
+    "imageUrl": "http://localhost:4200/assets/images/keyboard.jpg"
   },
   {
     "id": "13",
@@ -101,7 +101,7 @@
     "description": "Large mouse pad designed for smooth tracking.",
     "price": 12.99,
     "category": "accessories",
-    "imageUrl": "assets/images/mouse.jpg"
+    "imageUrl": "http://localhost:4200/assets/images/mouse.jpg"
   },
   {
     "id": "14",
@@ -109,7 +109,7 @@
     "description": "Compact 60% mechanical keyboard for enthusiasts.",
     "price": 74.99,
     "category": "electronics",
-    "imageUrl": "assets/images/keyboard.jpg"
+    "imageUrl": "http://localhost:4200/assets/images/keyboard.jpg"
   },
   {
     "id": "15",
@@ -117,7 +117,7 @@
     "description": "Comfortable mouse for long gaming sessions.",
     "price": 44.99,
     "category": "electronics",
-    "imageUrl": "assets/images/mouse.jpg"
+    "imageUrl": "http://localhost:4200/assets/images/mouse.jpg"
   },
   {
     "id": "16",
@@ -125,7 +125,7 @@
     "description": "Mechanical keyboard with silent switches.",
     "price": 84.99,
     "category": "electronics",
-    "imageUrl": "assets/images/keyboard.jpg"
+    "imageUrl": "http://localhost:4200/assets/images/keyboard.jpg"
   },
   {
     "id": "17",
@@ -133,7 +133,7 @@
     "description": "Wireless mouse with Bluetooth connectivity.",
     "price": 27.99,
     "category": "electronics",
-    "imageUrl": "assets/images/mouse.jpg"
+    "imageUrl": "http://localhost:4200/assets/images/mouse.jpg"
   },
   {
     "id": "18",
@@ -141,7 +141,7 @@
     "description": "Protective silicone cover for mechanical keyboards.",
     "price": 9.99,
     "category": "accessories",
-    "imageUrl": "assets/images/keyboard.jpg"
+    "imageUrl": "http://localhost:4200/assets/images/keyboard.jpg"
   },
   {
     "id": "19",
@@ -149,7 +149,7 @@
     "description": "Mouse with adjustable DPI settings for precision control.",
     "price": 39.99,
     "category": "electronics",
-    "imageUrl": "assets/images/mouse.jpg"
+    "imageUrl": "http://localhost:4200/assets/images/mouse.jpg"
   },
   {
     "id": "20",
@@ -157,7 +157,7 @@
     "description": "Comfortable wrist rest for compact keyboards.",
     "price": 11.99,
     "category": "accessories",
-    "imageUrl": "assets/images/keyboard.jpg"
+    "imageUrl": "http://localhost:4200/assets/images/keyboard.jpg"
   },
   {
     "id": "21",
@@ -165,7 +165,7 @@
     "description": "Wireless mouse with RGB lighting and smooth tracking.",
     "price": 49.99,
     "category": "electronics",
-    "imageUrl": "assets/images/mouse.jpg"
+    "imageUrl": "http://localhost:4200/assets/images/mouse.jpg"
   },
   {
     "id": "22",
@@ -173,6 +173,6 @@
     "description": "Keyboard with programmable macro keys.",
     "price": 94.99,
     "category": "electronics",
-    "imageUrl": "assets/images/keyboard.jpg"
+    "imageUrl": "http://localhost:4200/assets/images/keyboard.jpg"
   }
 ]

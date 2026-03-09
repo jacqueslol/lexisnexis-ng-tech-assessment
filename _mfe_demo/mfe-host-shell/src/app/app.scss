@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  height: calc(100vh - 20px);
+}
+
+.main-title {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.wrapper-container {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  height: calc(55% - 100px);
+  margin-top: 10px;
+}
+
+.wrapper {
+  border: 1px solid #eee;
+  padding: 10px;
+  overflow-y: scroll;
+
+  &.left,
+  &.equal {
+    flex: 1;
+  }
+
+  &.right {
+    flex: 2;
+  }
+}

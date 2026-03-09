@@ -9,7 +9,7 @@ describe('View Favorite Products', () => {
     cy.get('.nav-header').contains('Favorites').click();
     // Initially, no products should be favorited
     cy.get('.product-card').should('have.length', 0);
-    cy.contains('No favorites found');
+    cy.contains('No products found');
 
     // Go back to Catalog and favorite products
     cy.get('.nav-header').contains('Catalog').click();
@@ -106,7 +106,7 @@ describe('View Favorite Products', () => {
       .find('.favorite-btn')
       .click();
     cy.get('.product-card').should('have.length', 0);
-    cy.contains('No favorites found');
+    cy.contains('No products found');
 
     // Check that Catalog has been updated and all products are no longer marked as favorite
     cy.get('.nav-header').contains('Catalog').click();

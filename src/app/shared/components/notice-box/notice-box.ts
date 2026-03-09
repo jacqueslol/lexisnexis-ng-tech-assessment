@@ -13,17 +13,19 @@ type AlertType = 'info' | 'loader' | 'warning' | 'error';
   selector: 'app-notice-box',
   imports: [FaIconComponent],
   template: `<div [class]="'notice-box ' + type()">
-    <div class="icon">
-      @if (type() === 'info') {
-        <fa-icon [icon]="faInfoIcon"></fa-icon>
-      } @else if (type() === 'loader') {
-        <fa-icon [icon]="faLoader"></fa-icon>
-      } @else if (type() === 'warning') {
-        <fa-icon [icon]="faWarning"></fa-icon>
-      } @else if (type() === 'error') {
-        <fa-icon [icon]="faError"></fa-icon>
-      }
-    </div>
+    @if (!hideIcon()) {
+      <div class="icon">
+        @if (type() === 'info') {
+          <fa-icon [icon]="faInfoIcon"></fa-icon>
+        } @else if (type() === 'loader') {
+          <fa-icon [icon]="faLoader"></fa-icon>
+        } @else if (type() === 'warning') {
+          <fa-icon [icon]="faWarning"></fa-icon>
+        } @else if (type() === 'error') {
+          <fa-icon [icon]="faError"></fa-icon>
+        }
+      </div>
+    }
     <div>
       <ng-content></ng-content>
     </div>
@@ -38,4 +40,5 @@ export class NoticeBox {
   faError = faCircleXmark;
 
   type = input<AlertType>('info');
+  hideIcon = input<boolean>(false);
 }

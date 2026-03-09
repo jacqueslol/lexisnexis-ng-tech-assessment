@@ -1,0 +1,24 @@
+<div class="container">
+  <h1 class="main-title">MFE Demo</h1>
+  <div class="wrapper-container">
+    <div class="wrapper left">
+      <h2>Host App</h2>
+      <p>
+        This is the host shell application. Click any of the 3 products below to have them be shown
+        in the Product Details remote on the right.
+      </p>
+      <br />
+      @for (product of products; track $index) {
+        <button (click)="setProduct(product.id)">{{ product.name }}</button><br />
+      }
+    </div>
+    <div class="wrapper right">
+      <div class="widget" #productDetails></div>
+    </div>
+  </div>
+  <div class="wrapper-container">
+    <div class="wrapper equal">
+      <div class="widget" #catalog></div>
+    </div>
+  </div>
+</div>

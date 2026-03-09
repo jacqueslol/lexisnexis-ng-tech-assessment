@@ -2,7 +2,6 @@ import { TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { ProductService } from './product';
 import { Product } from '../../core/models/product.model';
-import { signal } from '@angular/core';
 
 describe('ProductService (Angular TestBed)', () => {
   let service: ProductService;
@@ -70,19 +69,6 @@ describe('ProductService (Angular TestBed)', () => {
 
     expect(service.error()).toBe('Failed to load products');
     expect(service.loading()).toBe(false);
-  });
-
-  it('should filter products by search, category, and sort', () => {
-    const filters = {
-      search: signal('wireless'),
-      category: signal('electronics'),
-      sort: signal('price' as 'name' | 'price'),
-    };
-
-    const productsSignal = signal<Product[]>(mockProducts);
-    const filtered = service.filterProducts(productsSignal, filters);
-
-    expect(filtered).toEqual([mockProducts[0]]);
   });
 
   it('should toggle favorites', () => {

@@ -2,6 +2,14 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.0.
 
+## Install dependencies
+
+Before trying to run anything, first install dependencies. Run this in the root of the project, and also in the `_mfe_demo/mfe-host-shell` directory for the MFE demo.
+
+```bash
+npm i
+```
+
 ## Development server
 
 To start a local development server, run:
@@ -11,20 +19,6 @@ ng serve
 ```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
 
 ## Building
 
@@ -52,8 +46,15 @@ For end-to-end (e2e) testing, run:
 ng e2e
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+This will run the Cypress GUI and show all available E2E tests.
 
-## Additional Resources
+## Running MFE demo (\_mfe_demo/mfe-host-shell)
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. To run the MFE demo, make sure `npm i` has been run in the root and in `_mfe_demo/mfe-host-shell` so dependencies are installed first.
+
+2. After this, run a development server for both projects by running `ng serve` in the root and in the `_mfe_demo/mfe-host-shell` directory.
+
+3. The MFE Demo will be hosted at http://localhost:4201/. Navigate here to see the demo. The demo will show the following:
+   3.1. A box in the top left with a control from the MFE host shell that changes what product data is sent into the product-details remote component to be rendered.
+   3.2. Box in the top right that shows the product-details remote component. The products shown here can be changed from [3.1].
+   3.3. Box at the bottom showing the catalog remote component. I did not add a lot of external controls to this, such as dealing with what happens when "View" is clicked on a product, but wanted to include this to show that the catalog component is MFE ready.

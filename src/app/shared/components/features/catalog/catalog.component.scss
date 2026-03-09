@@ -1,0 +1,42 @@
+section.top-hero {
+  height: 120px;
+  background: linear-gradient(45deg, #670d96, #5c0e8b);
+  padding: 10px 20px;
+  color: #fff;
+
+  h2 {
+    margin-bottom: 10px;
+  }
+}
+
+section.content {
+  overflow-y: scroll;
+  height: calc(100vh - 186px);
+  max-height: calc(100% - 120px);
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .mobile-only {
+    display: block;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  section.top-hero {
+    position: relative;
+    height: 65px;
+
+    h2 {
+      margin-bottom: 20px;
+      margin-top: 12px;
+    }
+  }
+  section.content {
+    height: calc(100vh - 131px);
+    max-height: unset;
+  }
+}

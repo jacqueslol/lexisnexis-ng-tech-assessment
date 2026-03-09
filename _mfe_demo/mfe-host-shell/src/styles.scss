@@ -33,7 +33,7 @@ ol[role='list'] {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
+  min-height: 100%;
   line-height: 1.5;
 }
 
@@ -94,22 +94,6 @@ body {
   margin: 0;
 }
 
-main {
-  width: 100%;
-  height: calc(100vh - 66px);
-}
-
 .animated {
   transition: all 0.5s ease;
-}
-
-@media (min-width: 600px) {
-  .mobile-only {
-    display: none;
-  }
-}
-@media (max-width: 600px) {
-  .desktop-only {
-    display: none;
-  }
 }

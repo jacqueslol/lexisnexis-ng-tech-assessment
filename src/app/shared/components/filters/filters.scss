@@ -3,8 +3,13 @@
   gap: 20px;
 }
 
+.filters-toggle {
+  display: none;
+}
+
 @media (max-width: 600px) {
   .filters-toggle {
+    display: block;
     position: absolute;
     top: 8px;
     right: 10px;

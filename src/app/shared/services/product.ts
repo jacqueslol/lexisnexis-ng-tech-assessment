@@ -1,7 +1,6 @@
 import { Injectable, signal, computed, inject, Signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Product } from '../../core/models/product.model';
-import { ProductFilters } from '../../core/models/product-filters.model';
 import { delay, of, switchMap, throwError } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
@@ -34,21 +33,6 @@ export class ProductService {
   // ----------------
   // Filtering helper (pure, uses page-provided filters)
   // ----------------
-
-  filterProducts(products: Signal<Product[]>, filters: ProductFilters) {
-    return computed(() => {
-      let list = [...products()];
-
-      if (filters.search())
-        list = list.filter((p) => p.name.toLowerCase().includes(filters.search().toLowerCase()));
-      if (filters.category() !== 'all')
-        list = list.filter((p) => p.category === filters.category());
-      if (filters.sort() === 'name') list.sort((a, b) => a.name.localeCompare(b.name));
-      else if (filters.sort() === 'price') list.sort((a, b) => a.price - b.price);
-
-      return list;
-    })();
-  }
 
   getById(id: string): Signal<Product | undefined> {
     if (!this._loaded()) {

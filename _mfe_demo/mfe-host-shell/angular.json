@@ -2,12 +2,11 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
-    "packageManager": "npm",
-    "schematicCollections": ["@cypress/schematic", "@schematics/angular"]
+    "packageManager": "npm"
   },
   "newProjectRoot": "projects",
   "projects": {
-    "lexisnexis-ng-tech-assessment": {
+    "mfe-host-shell": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,10 +22,10 @@
           "options": {},
           "configurations": {
             "production": {
-              "target": "lexisnexis-ng-tech-assessment:esbuild:production"
+              "target": "mfe-host-shell:esbuild:production"
             },
             "development": {
-              "target": "lexisnexis-ng-tech-assessment:esbuild:development",
+              "target": "mfe-host-shell:esbuild:development",
               "dev": true
             }
           },
@@ -35,7 +34,7 @@
         "serve": {
           "builder": "@angular-architects/native-federation:build",
           "options": {
-            "target": "lexisnexis-ng-tech-assessment:serve-original:development",
+            "target": "mfe-host-shell:serve-original:development",
             "rebuildDelay": 500,
             "dev": true,
             "cacheExternalArtifacts": false,
@@ -44,51 +43,6 @@
         },
         "test": {
           "builder": "@angular/build:unit-test"
-        },
-        "cypress-run": {
-          "builder": "@cypress/schematic:cypress",
-          "options": {
-            "devServerTarget": "lexisnexis-ng-tech-assessment:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "lexisnexis-ng-tech-assessment:serve:production"
-            }
-          }
-        },
-        "cypress-open": {
-          "builder": "@cypress/schematic:cypress",
-          "options": {
-            "watch": true,
-            "headless": false
-          }
-        },
-        "ct": {
-          "builder": "@cypress/schematic:cypress",
-          "options": {
-            "devServerTarget": "lexisnexis-ng-tech-assessment:serve",
-            "watch": true,
-            "headless": false,
-            "testingType": "component"
-          },
-          "configurations": {
-            "development": {
-              "devServerTarget": "lexisnexis-ng-tech-assessment:serve:development"
-            }
-          }
-        },
-        "e2e": {
-          "builder": "@cypress/schematic:cypress",
-          "options": {
-            "devServerTarget": "lexisnexis-ng-tech-assessment:serve-original:development",
-            "watch": true,
-            "headless": false
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "lexisnexis-ng-tech-assessment:serve-original:production"
-            }
-          }
         },
         "esbuild": {
           "builder": "@angular/build:application",
@@ -99,8 +53,7 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "src/assets",
-                "output": "/assets/"
+                "input": "public"
               }
             ],
             "styles": ["src/styles.scss"],
@@ -134,15 +87,15 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "lexisnexis-ng-tech-assessment:esbuild:production"
+              "buildTarget": "mfe-host-shell:esbuild:production"
             },
             "development": {
-              "buildTarget": "lexisnexis-ng-tech-assessment:esbuild:development"
+              "buildTarget": "mfe-host-shell:esbuild:development"
             }
           },
           "defaultConfiguration": "development",
           "options": {
-            "port": 4200
+            "port": 4201
           }
         }
       }

@@ -1,11 +1,10 @@
 import { TestBed } from '@angular/core/testing';
-import { signal, computed } from '@angular/core';
+import { signal } from '@angular/core';
 import { By } from '@angular/platform-browser';
 
 import { CatalogPageComponent } from './catalog-page';
 import { ProductService } from '../../../shared/services/product';
 import { Product } from '../../../core/models/product.model';
-import { ProductFilters } from '../../../core/models/product-filters.model';
 import { provideRouter } from '@angular/router';
 
 // Simple mock ProductService using signals
@@ -28,22 +27,6 @@ class MockProductService {
   }
   setError(msg: string | null) {
     this._error.set(msg);
-  }
-
-  // match API used by CatalogPageComponent
-  filterProducts(productsSignal: any, filters: ProductFilters) {
-    return computed(() => {
-      let list = [...productsSignal()];
-
-      if (filters.search())
-        list = list.filter((p) => p.name.toLowerCase().includes(filters.search().toLowerCase()));
-      if (filters.category() !== 'all')
-        list = list.filter((p) => p.category === filters.category());
-      if (filters.sort() === 'name') list.sort((a, b) => a.name.localeCompare(b.name));
-      else if (filters.sort() === 'price') list.sort((a, b) => a.price - b.price);
-
-      return list;
-    })();
   }
 
   loadProducts() {
@@ -97,7 +80,7 @@ describe('CatalogPageComponent', () => {
 
     const errorBox = fixture.debugElement.query(By.css('.notice-box.error'));
     expect(errorBox).toBeTruthy();
-    expect(errorBox.nativeElement.textContent).toContain('Failed to load');
+    expect(errorBox.nativeElement.textContent).toContain('Error occurred while loading products');
   });
 
   it('shows "No products found" when list is empty and not loading/error', () => {
@@ -131,24 +114,4 @@ describe('CatalogPageComponent', () => {
     expect(grid).toBeTruthy();
   });
 
-  it('updateFilters updates the filters signals', () => {
-    const filtersBefore = {
-      search: component.filters.search(),
-      category: component.filters.category(),
-      sort: component.filters.sort(),
-    };
-
-    component.updateFilters({
-      search: 'mouse',
-      category: 'electronics',
-      sort: 'price',
-    });
-
-    expect(component.filters.search()).not.toBe(filtersBefore.search);
-    expect(component.filters.category()).not.toBe(filtersBefore.category);
-    expect(component.filters.sort()).not.toBe(filtersBefore.sort);
-    expect(component.filters.search()).toBe('mouse');
-    expect(component.filters.category()).toBe('electronics');
-    expect(component.filters.sort()).toBe('price');
-  });
 });
